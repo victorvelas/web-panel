@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
 }
@@ -12,7 +11,7 @@
 }
 
 
-.full-height {
+.full-height-wpi {
     min-height: var(--standar-height-wpi);
     max-height: var(--standar-height-wpi);
 }
@@ -36,23 +35,75 @@
     width: 50%;
 }
 
-.lateral-menu-wpi {
+/* .lateral-menu-wpi {
     border: solid 1px purple;
     
+} */
+
+.full-width-wpi {
+    width: 100%
+}
+.padding-bottom-10-wpi {
+    padding-bottom: 10px;
+}
+.padding-left-30-wpi {
+    padding-left: 30px;
 }
 
 .lateral-menu-wpi > div {
     width: 100%;
-    border: solid 1px red;
     min-height: var(--standar-height-wpi);
 }
 
 .service-card-wpi {
-    border: solid 1px rgba(128, 128, 128, 0.212);
-    min-height: var(--standar-height-card);
+    height: var(--standar-height-card);
+    min-height: 180px;
+    position: relative;
+    color: #ffffff;
 }
+.service-card-wpi h1, .service-card-wpi h2, .service-card-wpi h3, .service-card-wpi h4, .service-card-wpi h5 {
+    text-decoration: underline;
+}
+.service-card-wpi span {
+    font-weight: bold;
+}
+.margin-auto {
+    margin: auto;
+}
+
+.service-card-wpi[bg-actived] {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    background-image: var(--img-src);
+}
+
 .service-card-wpi > div {
     padding: 10px;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.lateral-menu-wpi:hover .service-card-wpi:not(:hover) > div {
+    background-color: rgba(43, 42, 43, 0.877);
+    backdrop-filter: blur(5px);
+}
+.service-card-wpi > div{
+    background-color: var(--alpha-color-card);
+}
+.service-card-wpi:hover > div {
+    background-color: var(--alpha-color-card);
+}
+
+
+
+.full-height-wpi-100 {
+    height: 100%;
 }
 
 .content-service-card-wpi {
@@ -60,6 +111,20 @@
 }
 .button-service-card-wpi {
     width: 20%;
+    display: flex;
+}
+.button-service-card-wpi > button {
+    margin: auto;
+    border: solid 2px #fff;
+    color: #fff;
+    padding: 7px;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+.button-service-card-wpi > button:hover {
+    text-decoration: underline;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 /* Resolución para dispositivos móviles */
