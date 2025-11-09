@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+}
+:root {
+    --standar-height-wpi: 100dvh;
+    --standar-height-card: 20dvh;
+}
+
+
+.full-height {
+    min-height: var(--standar-height-wpi);
+    max-height: var(--standar-height-wpi);
+}
+
+.display-flex {
+    display: flex;
+}
+
+.lateral-menu-wpi {
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; 
+}
+
+.lateral-menu-wpi::-webkit-scrollbar {
+    display: none; /* Chrome, Safari y Opera */
+}
+
+.item-wpi {
+    width: 50%;
+}
+
+.lateral-menu-wpi {
+    border: solid 1px purple;
+    
+}
+
+.lateral-menu-wpi > div {
+    width: 100%;
+    border: solid 1px red;
+    min-height: var(--standar-height-wpi);
+}
+
+.service-card-wpi {
+    border: solid 1px rgba(128, 128, 128, 0.212);
+    min-height: var(--standar-height-card);
+}
+.service-card-wpi > div {
+    padding: 10px;
+}
+
+.content-service-card-wpi {
+    width: 80%;
+}
+.button-service-card-wpi {
+    width: 20%;
+}
+
+/* Resolución para dispositivos móviles */
+@media (max-width: 599px) {
+    .item-wpi {
+        width: 100% !important;
+        display: block;
+    }
+    .no-display-on-movil {
+        display: block;
+    }
+}

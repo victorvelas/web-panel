@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "name": "Ocupacional",
+        "sumary": "Evalúa y gestiona la salud de los trabajadores en relación con su entorno laboral.",
+        "color": "",
+        "targets": {
+            "type": "local",
+            "list": [
+                {
+                    "id": 1,
+                    "text": "Surquillo"
+                },
+                {
+                    "id": 2,
+                    "text": "Jeús María"
+                }
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "name": "Asistencial",
+        "sumary": "Brinda atención médica general y de emergencia a los pacientes.",
+        "color": "",
+        "targets": {
+            "type": "local",
+            "list": [
+                {
+                    "id": 3,
+                    "text": "Lince"
+                },
+                {
+                    "id": 2,
+                    "text": "Jeús María"
+                }
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "name": "Tópico",
+        "sumary": "Atiende incidentes leves y primeros auxilios dentro de la empresa.",
+        "color": "",
+        "targets": {
+            "type": "empresa",
+            "list": [
+                {
+                    "id": 1,
+                    "text": "Mediweb"
+                },
+                {
+                    "id": 2,
+                    "text": "Surtidores S.A.C."
+                }
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "name": "Vigilancia",
+        "sumary": "Realiza seguimiento periódico del estado de salud del personal.",
+        "color": "",
+        "targets": {
+            "type": "empresa",
+            "list": [
+                {
+                    "id": 3,
+                    "text": "Bambas"
+                },
+                {
+                    "id": 5,
+                    "text": "Software ratiles S.L.U."
+                }
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "name": "Higiene",
+        "sumary": "Supervisa las condiciones ambientales y sanitarias del entorno laboral.",
+        "color": "",
+        "targets": {
+            "type": null,
+            "list": []
+        }
+    },
+    {
+        "id": 6,
+        "name": "Iafas",
+        "sumary": "Gestiona la información y cobertura de las instituciones administradoras de fondos de salud.",
+        "color": "",
+        "targets": {
+            "type": null,
+            "list": []
+        }
+    }
+]
