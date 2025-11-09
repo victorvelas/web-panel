@@ -1,0 +1,70 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "b087a2b2332720e9514520507fbf85b7",
+    "packages": [
+        {
+            "name": "velas/echox",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/victorvelas/echox.git",
+                "reference": "d77a6d01a9b31fd999688699f852afe77fd44f48"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/victorvelas/echox/zipball/d77a6d01a9b31fd999688699f852afe77fd44f48",
+                "reference": "d77a6d01a9b31fd999688699f852afe77fd44f48",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Functions/Common.php"
+                ],
+                "psr-4": {
+                    "Velas\\Echox\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Victor Velasquez",
+                    "email": "victorvelas.lst@gmail.com"
+                }
+            ],
+            "description": "Simple template engine for php 8.2 without aditional dependences",
+            "homepage": "https://github.com/victorvelas/echox",
+            "keywords": [
+                "html",
+                "mvc",
+                "template engine",
+                "templating",
+                "view"
+            ],
+            "support": {
+                "issues": "https://github.com/victorvelas/echox/issues",
+                "source": "https://github.com/victorvelas/echox/tree/v1.0.0"
+            },
+            "time": "2024-11-14T14:17:13+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {},
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
+}

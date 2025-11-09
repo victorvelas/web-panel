@@ -1,0 +1,20 @@
+{
+    "name": "velas/web-panel",
+    "description": "A simple web panel for admin modules",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Velas\\WebPanel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Victor Velasquez",
+            "email": "victorvelas.lst@gmail.com"
+        }
+    ],
+    "require": {
+        "velas/echox": "^1.0"
+    }
+}
