@@ -27,7 +27,6 @@ const WPM = (function () {
 
     const $_toggleVisibility = function (targetClass, show) {
         const directiva = `.${targetClass}${!show ? ':not(.wpi-hidden)' : '.wpi-hidden'}`;
-        console.log(directiva);
         document.querySelectorAll(directiva).forEach(function (_e) {
             _e.classList.toggle('wpi-hidden');
         });
@@ -80,13 +79,10 @@ const WPM = (function () {
             const conf = configB64 === null ? null : JSON.parse(atob(configB64));
             if (parseInt(conf?.id || 0) > 0)
             {
-                console.log(conf);
                 document.getElementById('wpi-idservicio').value = conf.id;
                 $_scrollToForm();
                 document.querySelector('#wpi-form-title > .wpi-outlet').innerHTML = `Ingreso a: <span style="color: ${conf.color};">${conf.name}</span>`;
-                console.log(conf?.targets?.type);
                 $_showAndHide(conf?.targets?.type || null, conf);
-
                 $_updateSeletcts(conf.targets.type, conf.targets.list);
                 return;
             }
@@ -110,7 +106,7 @@ const WPM = (function () {
                         c.classList.add('wpi-hidden')
                     }
                 });
-            }, 150);
+            }, 180);
         }
     };
     return _;
