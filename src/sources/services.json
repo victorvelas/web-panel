@@ -62,7 +62,7 @@
     {
         "id": 4,
         "name": "Vigilancia",
-        "active": false,
+        "active": true,
         "sumary": "Realiza seguimiento periódico del estado de salud del personal.",
         "color": "#271b82",
         "targets": {
@@ -82,7 +82,7 @@
     {
         "id": 5,
         "name": "Higiene",
-        "active": false,
+        "active": true,
         "sumary": "Supervisa las condiciones ambientales y sanitarias del entorno laboral.",
         "color": "#2c7db0",
         "targets": {
@@ -93,7 +93,7 @@
     {
         "id": 6,
         "name": "Iafas",
-        "active": false,
+        "active": true,
         "sumary": "Gestiona la información y cobertura de las instituciones administradoras de fondos de salud.",
         "color": "#ff85f3",
         "targets": {
