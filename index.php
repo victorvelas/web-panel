@@ -30,13 +30,14 @@ if (!function_exists('hexToRGB'))
 }
 
 Html::$baseFolder = './src/views/';
-$sources = array_map(function (object $service) {
+$sources = array_map(function (object $service) : Html{
     $service->cssColors = hexToRGB($service->color, 0.7);
-    return $service;
     return renderHTML('components/service-card', [
         'service' => $service
     ]);
-}, json_decode(file_get_contents('./src/sources/services.json')));
+}, array_filter(json_decode(file_get_contents('./src/sources/services.json')), function (object $s) {
+    return $s->active;
+}));
 
 echo renderHTML('main', [
     'services' => $sources,

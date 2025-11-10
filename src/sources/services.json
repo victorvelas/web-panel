@@ -2,6 +2,7 @@
     {
         "id": 1,
         "name": "Ocupacional",
+        "active": true,
         "sumary": "Evalúa y gestiona la salud de los trabajadores en relación con su entorno laboral.",
         "color": "#0a730a",
         "targets": {
@@ -21,6 +22,7 @@
     {
         "id": 2,
         "name": "Asistencial",
+        "active": true,
         "sumary": "Brinda atención médica general y de emergencia a los pacientes.",
         "color": "#db9200",
         "targets": {
@@ -40,6 +42,7 @@
     {
         "id": 3,
         "name": "Tópico",
+        "active": true,
         "sumary": "Atiende incidentes leves y primeros auxilios dentro de la empresa.",
         "color": "#990606",
         "targets": {
@@ -59,6 +62,7 @@
     {
         "id": 4,
         "name": "Vigilancia",
+        "active": false,
         "sumary": "Realiza seguimiento periódico del estado de salud del personal.",
         "color": "#271b82",
         "targets": {
@@ -78,20 +82,22 @@
     {
         "id": 5,
         "name": "Higiene",
+        "active": false,
         "sumary": "Supervisa las condiciones ambientales y sanitarias del entorno laboral.",
         "color": "#2c7db0",
         "targets": {
-            "type": null,
+            "type": "otros",
             "list": []
         }
     },
     {
         "id": 6,
         "name": "Iafas",
+        "active": false,
         "sumary": "Gestiona la información y cobertura de las instituciones administradoras de fondos de salud.",
         "color": "#ff85f3",
         "targets": {
-            "type": null,
+            "type": "otros",
             "list": []
         }
     }
