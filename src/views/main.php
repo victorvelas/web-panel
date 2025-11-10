@@ -10,6 +10,15 @@
 <?php $this->section('html'); ?>
     <div class="no-display-on-movil display-flex content-wpi standar-height-wpi">
         <div class="item-wpi full-height-wpi lateral-menu-wpi">
+            <section class="padding-5-wpi">
+                <input 
+                    type="search" 
+                    id="input-search-wpi" 
+                    class="padding-8-wpi full-width-wpi search-wpi" 
+                    placeholder="Buscar servicio..."
+                    oninput="WPM.buscarServicio(this.value);"
+                />
+            </section>
             <div>
                 <?php foreach ($this->viewData['services'] as $service) { ?>
                     <?= $service; ?>

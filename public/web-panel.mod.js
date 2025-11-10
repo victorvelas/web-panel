@@ -66,6 +66,15 @@ const WPM = (function () {
     }
 
 
+    let timeoutId = null;
+
+    const showAllServices = function () {
+        document.querySelectorAll('.service-card-wpi.wpi-hidden').forEach(function (c) {
+            c.classList.remove('wpi-hidden');
+        });
+    };
+
+
     const _ = {
         setFormConfig: function (configB64) {
             const conf = configB64 === null ? null : JSON.parse(atob(configB64));
@@ -86,7 +95,22 @@ const WPM = (function () {
             document.querySelector('#wpi-form-title > .wpi-outlet').innerText = 'Seleccione un servicio';
             $_updateSeletcts(null, []);
             window.scrollTo({ top: 0, behavior: 'smooth' });
-
+        },
+        buscarServicio: function (criterio) {
+            if (timeoutId) {
+                clearTimeout(timeoutId);
+            }
+            const criterioMin = criterio.trim().toLowerCase();
+            timeoutId = setTimeout(function () {
+                showAllServices(); 
+                if (criterio.trim() === '') { return; }
+                document.querySelectorAll('.service-card-wpi').forEach(function (c) {
+                    if (!c.getAttribute('u-name').includes(criterioMin)) 
+                    {
+                        c.classList.add('wpi-hidden')
+                    }
+                });
+            }, 150);
         }
     };
     return _;

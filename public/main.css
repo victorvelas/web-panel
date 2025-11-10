@@ -39,9 +39,26 @@
     width: 50%;
 }
 
+.search-wpi {
+    background: rgba(59, 59, 59, 0.5);
+    border: solid 0px transparent;
+    border-bottom: solid 2px #e7e6e646;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+}
+.search-wpi:active, .search-wpi:focus {
+    outline: none !important;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.664);
+}
 
 .full-width-wpi {
     width: 100%
+}
+.padding-5-wpi {
+    padding: 5px;
+}
+.padding-8-wpi {
+    padding: 8px;
 }
 .padding-bottom-10-wpi {
     padding-bottom: 10px;

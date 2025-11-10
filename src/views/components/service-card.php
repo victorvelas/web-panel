@@ -1,6 +1,7 @@
 <div 
     id="service-card-<?= $this->viewData['service']->id; ?>" 
     class="service-card-wpi" 
+    u-name="<?= mb_strtolower($this->viewData['service']->name); ?>"
     <?php if (file_exists('public/images/services/serv-'.$this->viewData['service']->id.'.jpg')) { ?>
         style="--img-src: url('./images/services/serv-<?= $this->viewData['service']->id; ?>.jpg');"
         bg-actived
